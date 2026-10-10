@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DeadFile — Changing Hands, Back Soon</title>
+  <meta name="description" content="DeadFile has been acquired and is temporarily offline while we securely transition ownership. Your vault stays sealed with proprietary zero-knowledge encryption. We'll be back soon.">
+  <meta name="theme-color" content="#050b18">
+  <link rel="canonical" href="https://deadfile.com/">
+  <link rel="icon" type="image/png" href="img/deadfile-logo.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deadfile.com/">
+  <meta property="og:title" content="DeadFile — Changing Hands, Back Soon">
+  <meta property="og:description" content="DeadFile has been acquired. Your vault stays sealed with zero-knowledge encryption while we move to our new home.">
+  <meta property="og:image" content="https://deadfile.com/img/deadfile-logo.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <!-- 3D background -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="fx fx-vignette" aria-hidden="true"></div>
+  <div class="fx fx-scanlines" aria-hidden="true"></div>
+  <div class="fx fx-noise" aria-hidden="true"></div>
+
+  <header class="topbar reveal" style="--d: 1.6s">
+    <span class="mono domain">deadfile.com</span>
+    <span class="status mono"><i class="pulse"></i> Ownership transition in progress</span>
+  </header>
+
+  <main class="stage">
+    <!-- Brand / logo -->
+    <section class="brand" aria-label="DeadFile">
+      <div class="logo-stage">
+        <div class="logo-tilt" id="logoTilt">
+          <div class="glow"></div>
+          <div class="orbit o1"><b></b></div>
+          <div class="orbit o2"><b></b></div>
+          <div class="orbit o3"><b></b></div>
+          <div class="logo" id="logo">
+            <img src="img/deadfile-logo.png" alt="DeadFile logo" class="logo-img" width="1254" height="1254">
+            <div class="ch ch-a" aria-hidden="true"></div>
+            <div class="ch ch-b" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="wordmark glitch" data-text="DEADFILE" data-scramble>DEADFILE</h1>
+      <p class="tagline mono reveal" style="--d: 1.9s">Your legacy, sealed.</p>
+    </section>
+
+    <!-- Info -->
+    <section class="info" aria-label="Status update">
+      <span class="eyebrow mono reveal" style="--d: 1.2s" data-scramble>// Transmission 001 — Change of ownership</span>
+
+      <h2 class="headline reveal" style="--d: 1.35s">
+        DeadFile has been acquired.<br>
+        <span class="accent">We'll be back online soon.</span>
+      </h2>
+
+      <p class="lede reveal" style="--d: 1.5s">
+        We're joining a new home, and the service is offline while we move every vault over
+        securely. Nothing is lost, and nothing is exposed. Your vault moves with us, still sealed.
+      </p>
+
+      <div class="cards">
+        <article class="card reveal" style="--d: 1.7s">
+          <h3><span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/></svg>
+          </span>What is DeadFile?</h3>
+          <p>
+            A private vault for the things you want to leave behind. Store videos, pictures,
+            passwords, notes, documents and journals, and pass them on to the people who matter:
+            your loved ones, friends, kids and beneficiaries.
+          </p>
+          <ul class="chips mono" aria-label="What you can leave">
+            <li>Videos</li><li>Pictures</li><li>Passwords</li>
+            <li>Notes</li><li>Documents</li><li>Journals</li>
+          </ul>
+        </article>
+
+        <article class="card card-zk reveal" style="--d: 1.85s">
+          <h3><span class="ico ico-gold" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.4"/></svg>
+          </span>Zero-knowledge. Zero exceptions.</h3>
+          <p>
+            Everything is encrypted with our <strong>proprietary zero-knowledge encryption</strong>
+            before it leaves your device. <strong>We can't see your data.</strong>
+            Our new owners can't either. <strong class="gold">No one can but you.</strong>
+          </p>
+          <div class="cipher mono" aria-hidden="true">
+            <div><span class="k">what we see</span><span class="v" id="cipher">a3f9·c71e·0b4d·e82a·19fc</span></div>
+            <div><span class="k">what you see</span><span class="v plain">your memories.</span></div>
+          </div>
+        </article>
+      </div>
+
+      <ol class="steps reveal" style="--d: 2.05s" aria-label="Transition progress">
+        <li class="done"><i></i><span>Acquisition<br><em>Complete</em></span></li>
+        <li class="active"><i></i><span>Secure migration<br><em>In progress</em></span></li>
+        <li><i></i><span>Back online<br><em>Coming soon</em></span></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer mono reveal" style="--d: 2.2s">
+    <span>© <span id="year">2026</span> DeadFile</span>
+    <span class="sep">/</span>
+    <span>Vaults stay end-to-end encrypted throughout the transition.</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
