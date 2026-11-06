@@ -596,7 +596,7 @@ body {
   background: linear-gradient(90deg, var(--green), var(--gold));
   animation: fillBar 2.4s 2.4s cubic-bezier(.6, 0, .2, 1) forwards;
 }
-@keyframes fillBar { to { width: calc(50% - 8px); } }
+@keyframes fillBar { to { width: calc(62% - 8px); } }
 
 .steps li {
   position: relative;
